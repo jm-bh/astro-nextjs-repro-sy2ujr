@@ -1,9 +1,12 @@
 import Head from 'next/head';
-import Image from 'next/image';
-import { Roboto } from 'next/font/google';
-import styles from '@/styles/Home.module.css';
-import { RuxClock } from '@astrouxds/react';
-import { Table } from '@/components/Table';
+
+import {
+  RuxIconAntennaReceive,
+  RuxIconApps,
+  RuxMenu,
+  RuxMenuItem,
+  RuxPopUp,
+} from '@astrouxds/react';
 
 export default function Home() {
   return (
@@ -15,10 +18,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <div className="w-full grid grid-cols-1 grid-rows-2 md:grid-cols-2 md:grid-rows-1 gap-4 p-4">
-          <Table />
-          <Table withDiv />
-        </div>
+        <RuxIconAntennaReceive size="normal" suppressHydrationWarning />
       </main>
     </>
   );
